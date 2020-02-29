@@ -6,29 +6,44 @@
     padding: 3rem 0;
     width: 100%;
 
-    @media only screen and (min-width: 1366px) {
+    @media only screen and (min-width: 1280px) {
         @include flexContent($justify: flex-end);
     }
 
-    & i {
-        border: 1px solid $color-white;
-        border-radius: 50%;
-        color: inherit;
-        font-size: 1.6rem;
-        margin: 0 .8rem;
-        padding: 0.8rem;
+    &__link {
+        text-decoration: none;
 
-        @media only screen and (min-width: 768px) {
-            font-size: 1.8rem;
-            margin: 0 1.2rem;
+        & i {
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            color: inherit;
+            font-size: 1.6rem;
+            margin: 0 .8rem;
+            padding: 0.8rem;
+    
+            @media only screen and (min-width: 768px) {
+                font-size: 1.8rem;
+                margin: 0 1.2rem;
+            }
+    
+            @media only screen and (min-width: 1024px) {
+                font-size: 2.2rem;
+                margin: 0 1.2rem;
+                padding: 1.5rem;
+            }
         }
 
-        @media only screen and (min-width: 1024px) {
-            font-size: 2.2rem;
-            margin: 0 1.2rem;
-            padding: 1.5rem;
+        &:link,
+        &:visited {
+            color: inherit;
         }
     }
+}
+
+#facebook,
+#instagram,
+#twitter {
+    transition: color .2s;
 }
 
 #facebook {
@@ -36,5 +51,30 @@
 
     @media only screen and (min-width: 1024px) {
         padding: 1.5rem 1.8rem;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover,
+        &:active {
+            color: $color-facebook;
+        }
+    }
+}
+
+#instagram {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover,
+        &:active {
+            color: $color-instagram;
+        }
+    }
+}
+
+#twitter {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover,
+        &:active {
+            color: $color-twitter;
+        }
     }
 }

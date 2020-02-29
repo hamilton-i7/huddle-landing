@@ -33,7 +33,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   body {
     font-size: 1.7rem;
   }
@@ -49,7 +49,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .container {
     padding: 0 5.5rem;
   }
@@ -76,7 +76,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .heading-primary {
     font-size: 4rem;
   }
@@ -105,8 +105,8 @@ body {
           justify-content: center;
   background-color: #e4e4e4;
   border-radius: 30px;
-  -webkit-box-shadow: 0 8px 5px rgba(78, 78, 78, 0.5);
-          box-shadow: 0 8px 5px rgba(78, 78, 78, 0.5);
+  -webkit-box-shadow: 0 8px 5px rgba(56, 56, 56, 0.5);
+          box-shadow: 0 8px 5px rgba(56, 56, 56, 0.5);
   color: #674baf;
   font-family: inherit;
   font-size: 1.4rem;
@@ -130,7 +130,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .cta {
     margin: 0;
   }
@@ -141,7 +141,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .about-us {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -158,7 +158,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .about-us__img {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -174,7 +174,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .about-us__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,7 +195,7 @@ body {
 }
 
 .footer {
-  background-color: #4e4e4e;
+  background-color: #383838;
   color: #d6d6d6;
   padding: 1.2rem 3.5rem;
   text-align: center;
@@ -226,11 +226,23 @@ body {
   }
 }
 
+.footer__info a {
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
 .footer__info a:link,
 .footer__info a:visited {
   color: inherit;
   text-decoration: none;
   font-weight: bold;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer__info a:hover,
+  .footer__info a:active {
+    color: #674baf;
+  }
 }
 
 .header {
@@ -276,7 +288,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1280px) {
   .social-media {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -287,8 +299,12 @@ body {
   }
 }
 
-.social-media i {
-  border: 1px solid #e4e4e4;
+.social-media__link {
+  text-decoration: none;
+}
+
+.social-media__link i {
+  border: 1px solid currentColor;
   border-radius: 50%;
   color: inherit;
   font-size: 1.6rem;
@@ -297,18 +313,29 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .social-media i {
+  .social-media__link i {
     font-size: 1.8rem;
     margin: 0 1.2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .social-media i {
+  .social-media__link i {
     font-size: 2.2rem;
     margin: 0 1.2rem;
     padding: 1.5rem;
   }
+}
+
+.social-media__link:link, .social-media__link:visited {
+  color: inherit;
+}
+
+#facebook,
+#instagram,
+#twitter {
+  -webkit-transition: color .2s;
+  transition: color .2s;
 }
 
 #facebook {
@@ -318,5 +345,23 @@ body {
 @media only screen and (min-width: 1024px) {
   #facebook {
     padding: 1.5rem 1.8rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #facebook:hover, #facebook:active {
+    color: #1877f2;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #instagram:hover, #instagram:active {
+    color: #f46f30;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #twitter:hover, #twitter:active {
+    color: #1da1f2;
   }
 }
