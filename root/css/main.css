@@ -21,6 +21,12 @@ body {
   width: 100%;
 }
 
+@media only screen and (min-width: 414px) {
+  body {
+    background-size: cover;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   body {
     font-size: 2rem;
@@ -89,7 +95,14 @@ body {
   line-height: 1.7;
 }
 
-.cta {
+.cta__link {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.cta__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,34 +117,37 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e4e4e4;
+  border: none;
   border-radius: 30px;
   -webkit-box-shadow: 0 8px 5px rgba(56, 56, 56, 0.5);
           box-shadow: 0 8px 5px rgba(56, 56, 56, 0.5);
   color: #674baf;
+  cursor: pointer;
   font-family: inherit;
   font-size: 1.4rem;
   margin: 0 auto;
   margin-top: 2rem;
+  outline: none;
   padding: 1.2rem 0;
   text-transform: capitalize;
   width: 20rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .cta {
+  .cta__button {
     font-size: 1.8rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .cta {
+  .cta__button {
     font-size: 2.2rem;
     width: 25rem;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .cta {
+  .cta__button {
     margin: 0;
   }
 }
@@ -185,7 +201,7 @@ body {
             flex-direction: column;
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
-    padding: 6rem 0;
+    padding: 5rem 0;
     text-align: left;
   }
   .about-us__info p {
@@ -307,6 +323,9 @@ body {
 
 .social-media__link {
   text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .social-media__link i {
@@ -345,6 +364,7 @@ body {
 }
 
 #facebook {
+  cursor: pointer;
   padding: 0.8rem 1.1rem;
 }
 
