@@ -13,4 +13,17 @@
     padding: 1.2rem 0;
     text-transform: capitalize;
     width: 20rem;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 1.8rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 2.2rem;
+        width: 25rem;
+    }
+
+    @media only screen and (min-width: 1366px) {
+        margin: 0;
+    }
 }

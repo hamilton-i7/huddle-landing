@@ -5,8 +5,22 @@
     text-align: center;
 
     &__info {
+        display: inline-block;
         font-size: 1.3rem;
         line-height: 1.6;
+        width: 90%;
+
+        @media only screen and (min-width: 414px) {
+            width: 80%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 2rem;
+        }
 
         & a:link,
         & a:visited {
