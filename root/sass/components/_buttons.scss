@@ -1,0 +1,16 @@
+.cta {
+    @include flexRow(true);
+    @include flexContent($align: center, $justify: center);
+
+    background-color: $color-white;
+    border-radius: 30px;
+    box-shadow: 0 8px 5px rgba($color-dark-gray, .5);
+    color: $color-primary;
+    font-family: inherit;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.2rem 0;
+    text-transform: capitalize;
+    width: 20rem;
+}

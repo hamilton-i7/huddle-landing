@@ -1,0 +1,13 @@
+.header {
+    @include flexRow(true);
+    @include flexContent($align: center);
+
+    height: 15vh;
+    width: 100%;
+}
+
+.logo {
+    max-width: 20rem;
+    min-width: 15rem;
+    width: 60%;
+}

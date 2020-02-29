@@ -1,0 +1,18 @@
+.footer {
+    background-color: $color-dark-gray;
+    color: $color-light-gray;
+    padding: 1.2rem 3.5rem;
+    text-align: center;
+
+    &__info {
+        font-size: 1.3rem;
+        line-height: 1.6;
+
+        & a:link,
+        & a:visited {
+            color: inherit;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}

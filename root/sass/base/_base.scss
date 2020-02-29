@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-primary;
+    background-image: url(../images/bg-mobile.svg);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.container {
+    padding: 0 3.5rem;
+}

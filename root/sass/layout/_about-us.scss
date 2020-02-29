@@ -1,0 +1,17 @@
+.about-us {
+    margin: 3rem 0;
+    width: 100%;
+
+    &__img {
+        margin-bottom: 4rem;
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        text-align: center;
+    }
+}
