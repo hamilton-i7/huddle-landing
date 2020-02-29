@@ -226,6 +226,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .footer__info {
+    font-size: 1.6rem;
+  }
+}
+
 .footer__info a {
   -webkit-transition: color .2s;
   transition: color .2s;
